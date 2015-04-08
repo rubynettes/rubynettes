@@ -30,6 +30,16 @@ Buzz
 
 You will need the following tutorial section for this exercise!
 
+#### Hint
+
+To combine two conditions, you can use `&&` like so:
+```Ruby
+  if x >= 10 && x <= 20
+    puts "x is between 10 and 20"
+  end
+```
+
+
 ## Tutorial
 
 * Blocks http://ruby-for-beginners.rubymonstas.org/12-blocks.html
