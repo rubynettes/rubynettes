@@ -75,13 +75,10 @@ GAGCCTACTAACGGGAT
 GAGCCTACTAACGGGAT
 
 ```
-The Hamming distance between these two DNA strands is 0.
+The Hamming distance between these two DNA strands is 0 (because they are identical).
 
 #### Implementation Notes
 The Hamming distance is only defined for sequences of equal length.
-
-
-(Description copied from http://exercism.io/exercises/ruby/hamming/readme)
 
 
 #### Hint
@@ -89,7 +86,7 @@ The Hamming distance is only defined for sequences of equal length.
 * `String#chars` will give you an array of characters, e.g. `"Hello".chars` == `["H", "e", "l", "l", "o"]`
 
 
-
+(Description copied from http://exercism.io/exercises/ruby/hamming/readme)
 
 
 
