@@ -56,7 +56,7 @@ taken from different genomes with a common ancestor, we get a measure of
 the minimum number of point mutations that could have occurred on the
 evolutionary path between the two strands.
 
-This is called the *Hamming distance*.
+This is called the **Hamming distance**.
 
 It is found by comparing two DNA strands and counting how many of the
 nucleotides are different from their equivalent in the other string.
@@ -68,16 +68,16 @@ CATCGTAATGACGGCCT
 ```
 The Hamming distance between these two DNA strands is 7.
 
-### Implementation Notes
+#### Implementation Notes
 The Hamming distance is only defined for sequences of equal length. This means
 that based on the definition, each language could deal with getting sequences
 of equal length differently.
 
 
-Description: http://exercism.io/exercises/ruby/hamming/readme
+(Description copied from http://exercism.io/exercises/ruby/hamming/readme)
 
 
-### Hint
+#### Hint
 
 * `String#chars` will give you an array of characters, e.g. `"Hello".chars` == `["H", "e", "l", "l", "o"]`
 
