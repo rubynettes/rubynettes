@@ -2,9 +2,9 @@
 
 # Homework
 
-## Exercise: Command line input
+## Tutorial with Exercises: Command line input
 
-Do the exercises about command line input in http://ruby-doc.org/docs/Tutorial/part_02/user_input.html
+Do the tutorial with exercises about command line input in http://ruby-doc.org/docs/Tutorial/part_02/user_input.html
 
 
 ## Tutorial: Methods and Operators
