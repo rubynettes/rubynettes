@@ -61,6 +61,8 @@ This is called the **Hamming distance**.
 It is found by comparing two DNA strands and counting how many of the
 nucleotides are different from their equivalent in the other string.
 
+#### Examples
+
 ```
 GAGCCTACTAACGGGAT
 CATCGTAATGACGGCCT
@@ -68,10 +70,15 @@ CATCGTAATGACGGCCT
 ```
 The Hamming distance between these two DNA strands is 7.
 
+```
+GAGCCTACTAACGGGAT
+GAGCCTACTAACGGGAT
+
+```
+The Hamming distance between these two DNA strands is 0.
+
 #### Implementation Notes
-The Hamming distance is only defined for sequences of equal length. This means
-that based on the definition, each language could deal with getting sequences
-of equal length differently.
+The Hamming distance is only defined for sequences of equal length.
 
 
 (Description copied from http://exercism.io/exercises/ruby/hamming/readme)
