@@ -22,7 +22,7 @@ Quitting is not an option. The user can only end the game by guessing the target
 Once you have received a value from the user, you should perform validation. If the user has given you an invalid value (anything other than a number between 1 and 100), display an appropriate error message. If the user has given you a valid value, display a message either telling them that there were correct or should guess higher or lower as described above.
 This process should continue until they guess the correct number.
 
-What you will need to know for this exercise:
+#### What you will need to know for this exercise:
   * The `loop` statement repeats a block many times, until you call `break`:
   ```Ruby
     loop do
