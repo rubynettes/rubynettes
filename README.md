@@ -1,3 +1,2 @@
-# railsgirls
+# Material for the RailsGirls Project Group
 
-Test
