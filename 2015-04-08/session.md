@@ -30,9 +30,17 @@ Buzz
 
 You will need the following tutorial section for this exercise!
 
-#### Hint
+#### Hints
 
-To combine two conditions, you can use `&&` like so:
+1. Save your code in a file called `fizzbuzz.rb` and execute it in your Terminal application with 
+
+```
+  ruby fizzbuzz.rb
+```
+  
+
+
+2. To combine two conditions, you can use `&&` like so:
 ```Ruby
   if x >= 10 && x <= 20
     puts "x is between 10 and 20"
