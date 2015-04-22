@@ -6,7 +6,7 @@
 Maria: FizzBuzz
 Janine: Number Guessing Game
 
-Post your code until Wed 29.04.2015 22:00!!
+Send your code via email to me until Wed 29.04.2015 22:00!!
 
 
 ## Exercise: Hamming Distance
