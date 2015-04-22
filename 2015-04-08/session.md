@@ -30,6 +30,24 @@ Buzz
 
 You will need the following tutorial section for this exercise!
 
+#### Hints
+
+1. Save your code in a file called `fizzbuzz.rb` and execute it in your Terminal application with the command
+
+  ```
+    ruby fizzbuzz.rb
+  ```
+  
+
+
+2. To combine two conditions, you can use `&&` like so:
+  ```Ruby
+    if x >= 10 && x <= 20
+      puts "x is between 10 and 20"
+    end
+  ```
+
+
 ## Tutorial
 
 * Blocks http://ruby-for-beginners.rubymonstas.org/12-blocks.html
@@ -81,12 +99,14 @@ The Hamming distance between these two DNA strands is 0 (because they are identi
 The Hamming distance is only defined for sequences of equal length.
 
 
-#### Hint
+#### What you will need to know for this exercise
 
-* `String#chars` will give you an array of characters, e.g. `"Hello".chars` == `["H", "e", "l", "l", "o"]`
-
+* `String#length` gives you the length of as string, e.g. `"Hello".length` == `5`
+* `String#[]` returns the nth character of as string, e.g. 
+  `"Hello"[0]` == `"H"`,
+  `"Hello"[1]` == `"e"`,
+  `"Hello"[2]` == `"l"`, 
+  and so on.
 
 (Description copied from http://exercism.io/exercises/ruby/hamming/readme)
-
-
 
