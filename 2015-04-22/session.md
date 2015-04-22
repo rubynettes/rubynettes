@@ -1,6 +1,9 @@
+# Session
+
 ## Home Study Checkin
 
-* How went home study?
+How went your home study? Present your solutions!
+
 
 ## Basics Recap
 

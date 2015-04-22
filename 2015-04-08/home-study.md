@@ -1,6 +1,4 @@
-
-
-# Homework
+# Home Study
 
 ## Tutorial with Exercises: Command line input
 
