@@ -1,7 +1,8 @@
 
-## Exercise: Hamming Distance
+# Exercise: Hamming Distance
 
 Write a program that can calculate the Hamming difference between two DNA strands.
+
 
 A mutation is simply a mistake that occurs during the creation or
 copying of a nucleic acid, in particular DNA. Because nucleic acids are

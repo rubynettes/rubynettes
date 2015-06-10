@@ -1,4 +1,4 @@
-## Motivating Exercise: FizzBuzz
+# Exercise: FizzBuzz
 
 Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
 
@@ -46,13 +46,3 @@ You will need the following tutorial section for this exercise!
       puts "x is between 10 and 20"
     end
   ```
-
-
-## Tutorial
-
-You can also read this material, if you need more info:
-
-* Blocks http://ruby-for-beginners.rubymonstas.org/12-blocks.html
-* Conditionals: http://ruby-for-beginners.rubymonstas.org/13-bonus_1/05-conditionals.html
-
-
