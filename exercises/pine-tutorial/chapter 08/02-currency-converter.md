@@ -18,6 +18,9 @@ SEK
 AUD
 ```
 
+Structure the program such that you write a function `convert(amount, from, to)` that returns the converted currency amount, use that function to implement the program.
+
+
 ### Some Currency Conversion Rates
 
 * 1 EUR = 1,0454 CHF   (Swiss Franks)
