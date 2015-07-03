@@ -20,10 +20,10 @@ AUD
 
 ### Some Currency Conversion Rates
 
-1 EUR = 1,0454 CHF   (Swiss Franks)
-1 EUR = 6,8840 CNY   (Renminbi Yuan)
-1 EUR = 1,1097 USD   (US Dollars)
-1 EUR = 10,0981 ARS  (Argentinian Pesos)
+* 1 EUR = 1,0454 CHF   (Swiss Franks)
+* 1 EUR = 6,8840 CNY   (Renminbi Yuan)
+* 1 EUR = 1,1097 USD   (US Dollars)
+* 1 EUR = 10,0981 ARS  (Argentinian Pesos)
 
 ### Currency Conversion Table on the Internet
 
