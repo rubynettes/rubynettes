@@ -10,6 +10,7 @@ Sample output:
 Fizz
 4
 Buzz
+6
 7
 8
 Fizz
