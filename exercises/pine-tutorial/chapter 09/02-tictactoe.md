@@ -9,6 +9,7 @@ In this exercise, we build a version of the game Tic Tac Toe. The aim is to be a
 
 Tic Tac Toe is played on a board of 3x3 positions. The game starts with an empty board. The 2 players take turns, setting a stone 'X' or 'O' on one of the remaining free positions. If one player gets 3 stones in row, column or diagonal, she wins and the game ends.
 
+If after 9 moves nobody won, the game ends with a tie.
 
 ## Structure
 
