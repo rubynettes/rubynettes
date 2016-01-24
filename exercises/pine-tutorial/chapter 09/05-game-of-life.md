@@ -92,7 +92,7 @@ Do it!
 
 ### Part 3
 
-Add this method to `Grid`:
+Make a new class `Game`. Add this method:
 
 * Method `live_in_next_grid?(live, live_neighbours)` (live is a boolean, live_neighbours is an integer) that returns whether a cell should live or be dead in the next grid. As parameters, it takes the cell's current state (live - dead or alive) and the number of of living neighbours.
 
@@ -110,7 +110,7 @@ Find a way to test this method. And then test it!
 
 Now we will tie all this together!
 
-Make a new class `Game`. Add these methods:
+Add these methods to `Game`:
 
 * Method `initialize` that create a new Grid with dimensions 80*60 and assigns it to an instance variable @grid. Then it sets some cells live on this grid. This will be our initial grid situation.
 
@@ -134,4 +134,23 @@ After that you assign your new grid to @grid, theryby making it the current one.
     * print the current grid to the console
     * wait 1 second (code: `sleep(1)`)
     * make a `step()` (makes a new grid from the current one and assigns it to @grid.)
+
+
+#### Try it
+
+Run the game with `Game#start`.
+
+
+
+#### Part 5
+
+Here setup our initial grid randomly instead of with hardcoded coordinates.
+You can generate random coordinates using `rand(width)` and `rand(height)`. In the method `Game#initialize`, set 500 cells with random coordinates to 'live'.
+
+#### Try it
+
+Run the game with `Game#start` and enjoy.
+
+Hope you like it!
+
 
