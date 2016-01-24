@@ -15,7 +15,6 @@ With each step in the game, we create a new grid with an equal amount of cells.
 
 Game of Life is mapped onto a two dimensional (MxN) grid.
 For example, it can take place on a grid of 10 by 10 cells.
-
 On each grid position is a cell. Each cell is either dead or live.
 
 ![Example grid](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Game_of_life_loaf.svg/98px-Game_of_life_loaf.svg.png)
@@ -39,7 +38,7 @@ For each step in the game, you create a new grid from the old one. Doing that, y
 ## Aim of the Exercise
 
 We want to see an animation of the grid on the terminal, with cells moving around, having them appear and die.
-It will be fun to see the change across the generations, and if you implemented it correctly, you will be able to enjoy figures like on the Wikipedia page about Conway's Game of Life.
+It will be fun to see the change across the generations, and if you implemented it correctly, you will be able to enjoy figures like on the Wikipedia page about [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
 
 ## Initial thought before you start
 
@@ -75,10 +74,10 @@ Array.new(width) { Array.new(height, false) }
 
 * Method `print()` that prints the current grid to the console.
 
+
 #### You may ask yourselves...
 
-*How do you test these four methods (initialize, set_cell, live? and print)?*
-Try and find a suitable solution for this. Your approach should be to test each method, and consult with your partner for this exercise. You shouldn't have to consult your coach, unless you feel you cannot possible solve this alone.
+How do you test these four methods (initialize, set_cell, live? and print)? Try and find a suitable solution for this. Your approach should be to test each method, and consult with your partner for this exercise. You shouldn't have to consult your coach, unless you feel you cannot possible solve this alone.
 
 
 ### Part 2
@@ -92,7 +91,7 @@ Here you will have to deal with cells sitting at the border of the grid. For exa
 #### You may ask yourselves...
 
 But how do we test the `neighbours` method?
-Single out the precise problem you have and figure out a solution. Maybe you want to take a sheet of paper and draw out what is supposed to happen on the command line. Ask you partner for this exercsize, and try imagining what each line does, and if there may be a line missing.
+Single out the precise problem you have and figure out a solution. Maybe you want to take a sheet of paper and draw out what is supposed to happen on the command line. Ask you partner for this exercise, and try imagining what each line does, and if there may be a line missing.
 
 
 ### Part 3
