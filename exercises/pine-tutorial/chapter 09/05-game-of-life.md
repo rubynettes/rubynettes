@@ -8,13 +8,15 @@ Please do this exercise together with a partner, because you may want to reflect
 
 ## Description
 
-In Game of Life, we have a two dimensional grid with cells, and with each step in the game, we create a new grid with cells.
+In Game of Life, we have a two dimensional grid with cells.
+With each step in the game, we create a new grid with an equal amount of cells.
 
-### Grid and Cells
+### A Grid made up of Cells
 
-Game of Life takes place on a two dimensional (MxN) grid.
+Game of Life is mapped onto a two dimensional (MxN) grid.
+For example, it can take place on a grid of 10 by 10 cells.
 
-On each place on the grid is a cell. Each cell is either dead or live.
+On each grid position is a cell. Each cell is either dead or live.
 
 ![Example grid](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Game_of_life_loaf.svg/98px-Game_of_life_loaf.svg.png)
 
@@ -24,9 +26,9 @@ A cell that is not at the border of the grid has 8 neighbour cells:
 * left, right, upper, lower cells
 * and the 4 diagonals
 
-### A Step
+### Step by Step
 
-Each step in the game, you create a new grid from the old one, by using these 4 rules:
+For each step in the game, you create a new grid from the old one. Doing that, you need to apply these four rules:
 
 1. Any live cell with fewer than two live neighbours will be dead in the next grid, as if caused by under-population.
 2. Any live cell with two or three live neighbours lives in the next grid.
@@ -36,9 +38,12 @@ Each step in the game, you create a new grid from the old one, by using these 4 
 
 ## Aim of the Exercise
 
-We want to see an animation of the grid on the terminal, with cells moving around, having them appear and die. This is fun to watch, as in the Wikipedia page.
+We want to see an animation of the grid on the terminal, with cells moving around, having them appear and die.
+It will be fun to see the change across the generations, and if you implemented it correctly, you will be able to enjoy figures like on the Wikipedia page about Conway's Game of Life.
 
-To do this, we want to set up an initial grid of, say, 10x10, and add some live cells. Then we want to continuously clear the terminal, print the grid to the terminal and make a step.
+## Initial thought before you start
+
+We want to set up an initial grid of, say, 10x10, and add some live cells. Then we want to continuously clear the terminal, print the grid to the terminal and make a step.
 
 ### Part 1
 
@@ -70,9 +75,10 @@ Array.new(width) { Array.new(height, false) }
 
 * Method `print()` that prints the current grid to the console.
 
-#### Question!
+#### You may ask yourselves...
 
-How do you test these 4 methods? Find a solution and do it!
+*How do you test these four methods (initialize, set_cell, live? and print)?*
+Try and find a suitable solution for this. Your approach should be to test each method, and consult with your partner for this exercise. You shouldn't have to consult your coach, unless you feel you cannot possible solve this alone.
 
 
 ### Part 2
@@ -83,11 +89,10 @@ Add this method to `Grid`:
 Here you will have to deal with cells sitting at the border of the grid. For example, The cell at (0, 1) sits at the left border of the grid and therefore you must be careful not to check if the cell at (-1, 1) lives because it doesn't exist!
 
 
-#### Question!
+#### You may ask yourselves...
 
-Again - how do you test the `neighbours` method?
-
-Do it!
+But how do we test the `neighbours` method?
+Single out the precise problem you have and figure out a solution. Maybe you want to take a sheet of paper and draw out what is supposed to happen on the command line. Ask you partner for this exercsize, and try imagining what each line does, and if there may be a line missing.
 
 
 ### Part 3
@@ -96,14 +101,12 @@ Make a new class `Game`. Add this method:
 
 * Method `live_in_next_grid?(live, live_neighbours)` (live is a boolean, live_neighbours is an integer) that returns whether a cell should live or be dead in the next grid. As parameters, it takes the cell's current state (live - dead or alive) and the number of of living neighbours.
 
-In this method you apply the rules stated in the beginning, under the headline "A Step".
-
+In this method you apply the four rules stated in the beginning (go and read "Step by Step" again, carefully).
 The method returns a boolean (true or false) to indicate if the cell should live in the next grid.
 
 #### Testing
 
 Find a way to test this method. And then test it!
-
 
 
 #### Part 4
@@ -126,7 +129,7 @@ Ruby code : `puts "\e[H\e[2J"`
     * use these two results to calculate if the cell should live in the   new grid (use the existing `Grid` method for this). Store this as a boolean, true/false
     * assign this boolean to the cell at (x,y) in the new grid (use the existing `Grid` method for this).
 
-After that you assign your new grid to @grid, theryby making it the current one.
+After that you assign your new grid to @grid, thereby making it the current one.
 
 
 * Method `start()` that does the following in an endless loop:
@@ -147,10 +150,7 @@ Run the game with `Game#start`.
 Here setup our initial grid randomly instead of with hardcoded coordinates.
 You can generate random coordinates using `rand(width)` and `rand(height)`. In the method `Game#initialize`, set 500 cells with random coordinates to 'live'.
 
-#### Try it
+#### Enjoy the Game of Life
 
 Run the game with `Game#start` and enjoy.
-
 Hope you like it!
-
-
