@@ -43,6 +43,21 @@ Let's split this exercise into 3 steps.
 In the first step, we use hardcoded string instead of a file.
 So start with a local variable called `line` and assign it a string with some words. Then build your word count program based for that variable.
 
+So let's say you assign your local variable like this:
+
+```
+   line = "Fruit is good and good is right"
+```
+
+and you run your program, you should see:
+```
+fruit - 1
+is - 2
+good - 2
+and - 1
+right - 1
+```
+
 
 ## Step 2
 
