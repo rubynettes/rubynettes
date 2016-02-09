@@ -31,7 +31,7 @@ Example test `hipster_test.rb`:
 require 'minitest/autorun'
 require_relative '../lib/hipster'
 
-class TestHipster < MiniTest::Unit::TestCase
+class TestHipster < MiniTest::Test
   def setup
     @hipster = Hipster.new
     @list    = Array.new
