@@ -3,9 +3,9 @@
 use __assert__ for positive assertions and __refute__ for negative assertions
 
 | Assertion | Example |
-------------------
+| --------- | ------- |
 | __assert__ | assert @subject.any?, "empty subjects"  |
-| __assert_block__ | assert_block { @subject.any? }  |
+| __assert_block__ | assert_block { @subject.any? }   |
 | __assert_empty__ | assert_empty @list  |
 | __assert_equal__ | assert_equal 2, @subject.size  |
 | __assert_in_delta__ | assert_in_delta @subject.size, 1,1  |
