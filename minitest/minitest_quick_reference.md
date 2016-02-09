@@ -84,7 +84,7 @@ end
 
 require 'minitest/autorun'
 
-class TestTwipster < MiniTest::Unit::TestCase
+class TestTwipster < MiniTest::Test
   before do
     @twitter  = MiniTest::Mock.new
     @twipster = Twipster.new(@twitter)
