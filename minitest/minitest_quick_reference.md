@@ -68,11 +68,9 @@ $ ruby hipster_test.rb
 
 ## MiniTest::Mock
 
-there two essential methods at our disposal: __expect__ and __verify__
+There two essential methods at our disposal: `expect` and `verify`
 
 ```ruby
-require 'minitest/autorun'
-
 class Twipster
   def initialize(twitter)
     # A Ruby wrapper for the Twitter API
@@ -84,13 +82,19 @@ class Twipster
   end
 end
 
-describe Twipster, "Make every tweet a hipster tweet." do
+require 'minitest/autorun'
+
+class TestTwipster < MiniTest::Unit::TestCase
   before do
     @twitter  = MiniTest::Mock.new
     @twipster = Twipster.new(@twitter)
   end
 
-  it "should append a #lolhipster hashtag and update Twitter with our status" do
+  def teardown
+    @hipster.destroy!
+  end
+
+  def test_appends_a_lolhipster_hashtag_and_updates_twitter_with_our_status
     tweet = "Skyrim? Too mainstream."
     @twitter.expect :update, true, ["#{tweet} #lolhipster"]
     @twipster.submit(tweet)
