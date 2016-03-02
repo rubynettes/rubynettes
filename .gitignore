@@ -1,3 +1,5 @@
+.DS_Store
+.byebug_history
 *.gem
 *.rbc
 /.config
