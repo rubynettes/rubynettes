@@ -1,6 +1,6 @@
 ## Exercise: Factorial
 
-Write a program which takes a integer value (= a positive number without no fractions, such as 1 or 5) and outputs its factorial number.
+Write a program which takes an integer value (= a positive number without fractions, such as 1 or 5 or 97) and outputs its factorial number.
 
 The factorial of 5 is 1 * 2 * 3 * 4 * 5 = 120, and the factorial of n is 1 * 2 * 3... * n.
 
